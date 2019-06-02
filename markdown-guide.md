@@ -1,19 +1,3 @@
-+++
-title = "Learning Markdown For Effortless HTML"
-date = 2019-05-31T17:24:19+01:00
-description = "modern markdown style guide"
-draft = true
-toc = false
-categories = ["tutorial"]
-tags = ["markdown", "tutorial", "text-to-html", "bash", "static", "hugo", "html", "", "guide", "neovim"]
-images = [
-# "https://source.unsplash.com/collection/983219/1600x900"
-] # overrides site-wide open graph image
-[[copyright]]
-  owner = "Briain O'Driscoll"
-  date = "2019"
-  license = "cc-by-nd-4.0"
-+++
 
 The practice of writing in *`markdown`* is widespread because it only requires `simple syntax` to create attractive slide presentations or a _blog-post_ for example. `Markdown` is intended to be as easy-to-read and as easy-to-write as is feasible. A markdown-formatted document is practically publishable as plain text, unlike it's HTML counterpart, raw in it's native _tagged_ surroundings. To illustrate some of the features, I put together this `tutorial` loosely based on the [original spec in 2004]. You can [try writing some yourself]. Gone are the days when you had to learn `html` to publish a web-page!
 <br>
@@ -396,6 +380,3 @@ so that new roots hidden beneath have room to grow.
 Whatever sorrow shakes from your heart, far better things will take their place.
 ― Rumi
 
-<br>
-
-[Home](/)
