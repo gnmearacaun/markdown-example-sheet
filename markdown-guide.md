@@ -1,4 +1,4 @@
-This page is intended to be viewed in a web-browser.
+This page is intended to be viewed in a web-browser to fully experience the quality of `markdown`.
 
 The practice of writing in *`markdown`* is widespread because it only requires `simple syntax` to create attractive slide presentations or a _blog-post_ for example. `Markdown` is intended to be as easy-to-read and as easy-to-write as is feasible. A markdown-formatted document is practically publishable as plain text, unlike it's HTML counterpart, raw in it's native _tagged_ surroundings. To illustrate some of the features, I put together this `tutorial` loosely based on the [original spec in 2004]. You can [try writing some yourself]. Gone are the days when you had to learn `html` to publish a web-page!
 <br>
@@ -12,7 +12,7 @@ Markdown's syntax has been influenced by several existing text-to-HTML filters s
 -- [Setext](http://docutils.sourceforge.net/mirror/setext.html), [atx](http://www.aaronsw.com/2002/atx/), [Textile](http://textism.com/tools/textile/), [reStructuredText](http://docutils.sourceforge.net/rst.html),
 [Grutatext](http://www.triptico.com/software/grutatxt.html), and [EtText](http://ettext.taint.org/doc/) -- the single biggest source of inspiration for Markdown's syntax is the format of plain text email.
 
-To make it obvious, I will highlight the markdown code in blue by placing three back-ticks (```md) before and after the specified lines in my markdown code. For example, __what's in blue is what's typed into a text editor. Below it is what's served up by a web browser such as Firefox, Opera, Safari or Chrome. It goes like this:__
+For code blocks, I will surround the markdown with three back-ticks (```) above and below the specified lines as typed into a text editor. Following that, is what's served up by a web browser such as Firefox, Opera, Safari or Chrome. It goes like this:__
 
 <br>
 
