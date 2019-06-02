@@ -1,6 +1,6 @@
 This page is intended to be viewed in a web-browser to fully experience the quality of `markdown`.
 
-The practice of writing in *`markdown`* is widespread because it only requires `simple syntax` to create attractive slide presentations or a _blog-post_ for example. `Markdown` is intended to be as easy-to-read and as easy-to-write as is feasible. A markdown-formatted document is practically publishable as plain text, unlike it's HTML counterpart, raw in it's native _tagged_ surroundings. To illustrate some of the features, I put together this `tutorial` loosely based on the [original spec in 2004]. You can [try writing some yourself]. Gone are the days when you had to learn `html` to publish a web-page!
+The practice of writing in *`markdown`* is widespread because it only requires `simple syntax` to create attractive slide presentations or a _blog-post_ for example. `Markdown` is intended to be as easy-to-read and as easy-to-write as is feasible. A markdown-formatted document is practically publishable as plain text, unlike it's HTML counterpart, raw in it's native _tagged_ surroundings. To illustrate some of the features, I put together this `tutorial` loosely based on the [original spec in 2004].  When you need to convert your document into `HTML` [pandoc](www.pandoc.org) is your swiss-army knife of converting into all kinds of formats, various wiki formats and epub to [self-publish](https://smartblogger.com/kindle-publishing/publish) for [Amazon Kindle](https://kdp.amazon.com/en_US/). You can [try writing some yourself]. Gone are the days when you had to learn `html` to publish a web-page!
 <br>
 
 <strong>Tip:</strong> `HTML` is awesome because of the ability to zoom in and out so easily with  `_Ctrl'n scroll'n_`. In case you didn't know, hold down `ctrl` and `=` or `-` to change font-sizes. It will will neatly adjust itself to the screen. Alternatively, hold down the `ctrl` key and scroll your mousewheel.
@@ -295,7 +295,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 ```
-[**back to previous position in document**](#emphasis)
+[**back to earlier position in document**](#emphasis)
 
 ### Images
 
@@ -306,9 +306,9 @@ To insert images to your markdown file, use the markup `![ALT](/path/image.ext)`
 ```
 __a.k.a.__
 ```md
-![A screenshot of the underlying code](/images/md-guide.png "Neovim on My Desktop")
+![A screenshot of the underlying code](md-guide.png "Neovim on My Desktop")
 ```
-![A screenshot of the underlying code](/images/md-guide.png "Neovim on My Desktop")
+![A screenshot of the underlying code](md-guide.png "Neovim on My Desktop")
 
 ### Video
 
