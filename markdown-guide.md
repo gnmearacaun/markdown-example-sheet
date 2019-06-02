@@ -286,14 +286,16 @@ Regular Markdown syntax is not processed within code blocks. E.g., asterisks are
 <h3 id="coloured_code">Coloured Code</h3>
 <!--- hidden comment... I just like it spelled the old way --->
 
-Nowadays there is support for code highlighting for about 160 programming languages. This is a snippet written in [bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)), the commandline language of the Linux shell.
+Nowadays there is support for code highlighting for about 160 programming languages. This is a snippet written in [bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)), the commandline language of the Linux shell. In addition to the three backticks you can add an abbreiviation such as `md` (for markdown)or `sh` (for the bash shell).
+
+
 
 ```sh
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 ```
-[**back to where I was**](#emphasis)
+[**back to previous position in document**](#emphasis)
 
 ### Images
 
@@ -339,25 +341,25 @@ If you want to be sure of getting empty lines between elements, insert a `<br />
 
 ### Tables
 
-```md
-| Left align | Right align | Center align |
-|:-----------|------------:|:------------:|
-| This       |        This |     This     |
-| column     |      column |    column    |
-| will       |        will |     will     |
-| be         |          be |      be      |
-| left       |       right |    center    |
-| aligned    |     aligned |   aligned    |
+``` {.md}
+| Left align   | Center align  | Right align    |
+| :----------- | :-----------: | -------------: |
+| This         | This          | This           |
+| column       | column        | column         |
+| will         | will          | will           |
+| be bold &    | be            | be             |
+| left-        | center-       | right-         |
+| aligned      | aligned       | aligned        |
 ```
 
-| Left align | Right align | Center align |
-|:-----------|------------:|:------------:|
-| This       |        This |     This     |
-| column     |      column |    column    |
-| will       |        will |     will     |
-| be         |          be |      be      |
-| left       |       right |    center    |
-| aligned    |     aligned |   aligned    |
+| Left align   | Center align  | Right align    |
+| :----------- | :-----------: | -------------: |
+| This         | This          | This           |
+| column       | column        | column         |
+| will         | will          | will           |
+| be bold &    | be            | be             |
+| left-        | center-       | right-         |
+| aligned      | aligned       | aligned        |
 
 ### Blockquotes
 
