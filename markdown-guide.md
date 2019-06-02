@@ -1,12 +1,12 @@
 This page is intended to be viewed in a web-browser to fully experience the quality of `markdown`.
 
-The practice of writing in *`markdown`* is widespread because it only requires `simple syntax` to create attractive slide presentations or a _blog-post_ for example. `Markdown` is intended to be as easy-to-read and as easy-to-write as is feasible. A markdown-formatted document is practically publishable as plain text, unlike it's HTML counterpart, raw in it's native _tagged_ surroundings. To illustrate some of the features, I put together this `tutorial` loosely based on the [original spec in 2004].  When you need to convert your document into `HTML` [pandoc](www.pandoc.org) is your swiss-army knife of converting into all kinds of formats, various wiki formats and epub to [self-publish](https://smartblogger.com/kindle-publishing/publish) for [Amazon Kindle](https://kdp.amazon.com/en_US/). You can [try writing some yourself]. Gone are the days when you had to learn `html` to publish a web-page!
+The practice of writing in *`markdown`* is widespread because it only requires `simple syntax` to create attractive slide presentations or a _blog-post_ for example. `Markdown` is intended to be as easy-to-read and as easy-to-write as is feasible. A markdown-formatted document is practically publishable as plain text, unlike it's HTML counterpart, raw in it's native _tagged_ surroundings. To illustrate some of the features, I put together this `tutorial` loosely based on the [original spec from 2004].  When you need to convert your document into `HTML` [pandoc](www.pandoc.org) is your swiss-army knife of converting into all kinds of formats, various wiki formats and epub to [self-publish](https://smartblogger.com/kindle-publishing/publish) for [Amazon Kindle](https://kdp.amazon.com/en_US/). You can [give markdown a try]. Gone are the days when you had to learn `html` to publish a web-page!
 <br>
 
 <strong>Tip:</strong> `HTML` is awesome because of the ability to zoom in and out so easily with  `_Ctrl'n scroll'n_`. In case you didn't know, hold down `ctrl` and `=` or `-` to change font-sizes. It will will neatly adjust itself to the screen. Alternatively, hold down the `ctrl` key and scroll your mousewheel.
 
-  [original spec in 2004]: https://daringfireball.net/projects/markdown/syntax.text
-  [try writing some yourself]: https://markdown-it.github.io/
+  [original spec from 2004]: https://daringfireball.net/projects/markdown/syntax.text
+  [give markdown a try]: https://markdown-it.github.io/
 ----
 Markdown's syntax has been influenced by several existing text-to-HTML filters such as
 -- [Setext](http://docutils.sourceforge.net/mirror/setext.html), [atx](http://www.aaronsw.com/2002/atx/), [Textile](http://textism.com/tools/textile/), [reStructuredText](http://docutils.sourceforge.net/rst.html),
@@ -120,6 +120,12 @@ __double underscores__
 ```
 **becomes**
 __double underscores__
+
+```md
+~~strikethrough~~
+```
+**becomes**
+~~strikethrough~~
 
 ### Lists
 
@@ -284,7 +290,6 @@ Regular Markdown syntax is not processed within code blocks. E.g., asterisks are
 <br>
 
 <h3 id="coloured_code">Coloured Code</h3>
-<!--- hidden comment... I just like it spelled the old way --->
 
 Nowadays there is support for code highlighting for about 160 programming languages. This is a snippet written in [bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)), the commandline language of the Linux shell. In addition to the three backticks you can add an abbreiviation such as `md` (for markdown)or `sh` (for the bash shell).
 
@@ -295,7 +300,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 ```
-[**back to earlier position in document**](#emphasis)
+[**back to _Emphasis**](#emphasis)
 
 ### Images
 
