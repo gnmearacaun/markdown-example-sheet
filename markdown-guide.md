@@ -1,3 +1,5 @@
+This document is best veiwed in a html browser to experience the quality of Markdown.
+
 The practice of writing in *`markdown`* is widespread because it only requires `simple syntax` to create attractive slide presentations or a _blog-post_ for example. `Markdown` is intended to be as easy-to-read and as easy-to-write as is feasible. A markdown-formatted document is practically publishable as plain text, unlike it's HTML counterpart, raw in it's native _tagged_ surroundings. To illustrate some of the features, I put together this `tutorial` loosely based on the [original spec from 2004]. To convert your document into `HTML`, [pandoc](www.pandoc.org) is your swiss-army knife of converting into all kinds of formats, various wiki formats or epub to [self-publish](https://smartblogger.com/kindle-publishing/#more-10275) for [Amazon Kindle](https://kdp.amazon.com/en_US/) for example. You can [give markdown a try]. Gone are the days when you had to learn `html` to publish a web-page!
 
 <br/>
