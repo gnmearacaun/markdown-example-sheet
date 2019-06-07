@@ -13,7 +13,7 @@ The practice of writing in *`markdown`* is widespread because it only requires `
 Markdown's syntax has been influenced by several existing _text-to-html_ filters such as [setext](http://docutils.sourceforge.net/mirror/setext.html), [atx](http://www.aaronsw.com/2002/atx/), [textile](http://textism.com/tools/textile/), [restructuredtext](http://docutils.sourceforge.net/rst.html), [grutatext](http://www.triptico.com/software/grutatxt.html), and [ettext](http://ettext.taint.org/doc/) -- the single biggest source of inspiration for markdown's syntax is the format of plain text email.
 
 <br>
-Okay, enough with the boring stuff already. I'll be highlighting what is typed into the text editor. Note, you don't want to use a word processor, that would add alot of extraneous characters. Whats needed here is a plain text editor such as Notepad++, Atom, SublimeText or Vim_. You'll see what is served up by opening your .txt document in Firefox, Opera, Safari, Chrome or in a _color-coded_ terminal-based browser such as [Lynx](https://royal.pingdom.com/using-web-browser-lynx-visit-top-websites/). _It goes like this:_
+Okay, enough with the boring stuff already. I'll be highlighting what is typed into the text editor. Note, you don't want to use a word processor, that would add alot of extraneous characters. Whats needed here is a plain text editor such as Notepad++, Atom, SublimeText or Vim. You'll see what is served up by opening your .txt document in Firefox, Opera, Safari, Chrome or in a _color-coded_ terminal-based browser such as [Lynx](https://royal.pingdom.com/using-web-browser-lynx-visit-top-websites/). _It goes like this:_
 
 <br>
 __type:__
