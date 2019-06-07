@@ -2,10 +2,9 @@ This document is best veiwed in a html browser to experience the quality of Mark
 
 The practice of writing in *`markdown`* is widespread because it only requires `simple syntax` to create attractive slide presentations or a _blog-post_ for example. `Markdown` is intended to be as easy-to-read and as easy-to-write as is feasible. A markdown-formatted document is practically publishable as plain text, unlike it's HTML counterpart, raw in it's native _tagged_ surroundings. To illustrate some of the features, I put together this `tutorial` loosely based on the [original spec from 2004]. To convert your document into `HTML`, [pandoc](www.pandoc.org) is your swiss-army knife of converting into all kinds of formats, various wiki formats or epub to [self-publish](https://smartblogger.com/kindle-publishing/#more-10275) for [Amazon Kindle](https://kdp.amazon.com/en_US/) for example. You can [give markdown a try]. Gone are the days when you had to learn `html` to publish a web-page!
 
-<br/>
-{{< hackcss-alert type="info" >}}
+
 <strong>Tip:</strong> Html is awesome because of the ability to zoom in and out with most any display; hold down ctrl and = or - to adjust font-sizes. Alternatively there's ctrl'n scroll'n; hold down the ctrl key and scroll your mousewheel.
-{{< /hackcss-alert >}}
+
   [original spec from 2004]: https://daringfireball.net/projects/markdown/syntax.text
   [give markdown a try]: https://markdown-it.github.io/
 
@@ -78,9 +77,9 @@ __Take me to the__ [Coloured Code](#Coloured_Code)
 __Take me to the__ [Coloured Code](#Coloured_Code)
 
 <br/>
-{{< hackcss-alert type="info" >}}
+
 <strong>Tip:</strong> Most `html` is obscured from the reader, and the same goes for the `markdown` that this page is written in. `Html`, `javascript` or `golang` plugins add functionality to the webpage if needs be.
-{{< /hackcss-alert >}}
+
 
 <br/>
 The following can be written in html or markdown as we have seen. It's both an anchor and a header.
@@ -242,9 +241,8 @@ I used html to create the 'Emphasis' header/anchor, but can refer back to it usi
 To insert images to your markdown file, use the markup `![alt](/path/image.ext)`. the path can either be relative to the website, or a full url for an external image. *below* is an screenshot of my desktop
 
 <br/>
-{{< hackcss-alert type="info" >}}
 <strong>Tip:</strong> You can set up your desired level of transparency in your programs easily in linux. The screenshot shows my text editor, neovim, and in the layer underneath it, firefox. My Hugo sites's embedded server reflects the changes as they are typed and reflects the changes immediately in the webpage. My changes are pushed to the clould via Amazon's CodeCommit service just as soon as I issue the three familiar commands: `git add .`, git commit -m "message documenting change(s)", and `git push -u origin master`.
-{{< /hackcss-alert >}}
+
 
 <br/>
 
