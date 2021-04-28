@@ -1,29 +1,39 @@
 This document is best veiwed in a html browser to experience the quality of Markdown.
 
-The practice of writing in *`markdown`* is widespread because it only requires `simple syntax` to create attractive slide presentations or a _blog-post_ for example. `Markdown` is intended to be as easy-to-read and as easy-to-write as is feasible. A markdown-formatted document is practically publishable as plain text, unlike it's HTML counterpart, raw in it's native _tagged_ surroundings. To illustrate some of the features, I put together this `tutorial` loosely based on the [original spec from 2004]. To convert your document into `HTML`, [pandoc](www.pandoc.org) is your swiss-army knife of converting into all kinds of formats, various wiki formats or epub to [self-publish](https://smartblogger.com/kindle-publishing/#more-10275) for [Amazon Kindle](https://kdp.amazon.com/en_US/) for example. You can [give markdown a try]. Gone are the days when you had to learn `html` to publish a web-page!
+Markdown has gained much traction due to it's simple syntax and ease of use. You can edit Markdown in plain text, unlike `HTML` with it's _taggy_ surrounds. *Hyperlinks* to other documents and urls are retained without affecting readability. Other attributes will be `color-coded` in your text editor. Nowadays, markdown is widely used for project documentation, jupyter notebooks and rendering static webpages (like this one!) on modern [web frameworks](https://jamstack.org/). It is super useful for [*vimwiki*](https://mkaz.blog/working-with-vim/vimwiki/), a personal text-based *wiki plugin* for [Vim](https://www.vim.org/). 
 
+<br/>
+{{< hackcss-alert type="success" >}}
+<strong>Code Tip:</strong> 
+Use the following command to extract the articles in *clean markdown* from a folder of `.html` documents (you will need `rdrview` (from github) and `pip install html2markdown`):
+<br/>
+`for i in *.html ; do echo "$i" && rdrview --template=title,sitename,byline,body -H $i | html2markdown --no-skip-internal-links --no-automatic-links --no-wrap-links --ignore-images --unicode-snob --mark-code --body-width=0 --single-line-break --decode-errors=ignore > $i.md ; done`
+{{< /hackcss-alert >}}
 
-<strong>Tip:</strong> Html is awesome because of the ability to zoom in and out with most any display; hold down ctrl and = or - to adjust font-sizes. Alternatively there's ctrl'n scroll'n; hold down the ctrl key and scroll your mousewheel.
+This guide will help you get to grips with writing markdown for yourself. 
 
-  [original spec from 2004]: https://daringfireball.net/projects/markdown/syntax.text
-  [give markdown a try]: https://markdown-it.github.io/
-
-<br>
 <!--more-->
-Markdown's syntax has been influenced by several existing _text-to-html_ filters such as [setext](http://docutils.sourceforge.net/mirror/setext.html), [atx](http://www.aaronsw.com/2002/atx/), [textile](http://textism.com/tools/textile/), [restructuredtext](http://docutils.sourceforge.net/rst.html), [grutatext](http://www.triptico.com/software/grutatxt.html), and [ettext](http://ettext.taint.org/doc/) -- the single biggest source of inspiration for markdown's syntax is the format of plain text email.
 
-<br>
-Okay, enough with the boring stuff already. I'll be highlighting what is typed into the text editor. Note, you don't want to use a word processor, that would add alot of extraneous characters. Whats needed here is a plain text editor such as Notepad++, Atom, SublimeText or Vim. You'll see what is served up by opening your .txt document in Firefox, Opera, Safari, Chrome or in a _color-coded_ terminal-based browser such as [Lynx](https://royal.pingdom.com/using-web-browser-lynx-visit-top-websites/). _It goes like this:_
+>  For more ambitious [self-publishing] projects like an ebook, you can leverage other tools like `docbook`, `asciidoc`. [Pandoc](https://pandoc.org/) for example, can [reliably convert](https://jdhao.github.io/2019/05/30/markdown2pdf_pandoc/) .md into `HTML`, `pdf`, `epub`, `wiki` or myriad of other formats. 
+  [self-publishing]: https://smartblogger.com/kindle-publishing/#more-10275
+  
+<br/>
+All you need to get started is a `plain text` editor such as Notepad++, Atom, SublimeText or Vim. You don't want to use a word processor, that would add extraneous characters. 
+<br/>
 
+__Let's do this!__
+
+
+### Headers
 <br>
-__type:__
+__type this:__
 <br>
 
 ```md
 Largest font
 ============
 ```
-**to produce**
+**to produce this:**
 
 Largest font
 ============
@@ -39,12 +49,12 @@ Elements
 ```md
 ## Elements
 ```
-**will produce**
+**and we get**
 
 Elements
 --------
 
-__type__
+__Type__
 
 ```md
 ### Links
@@ -53,44 +63,45 @@ __type__
 
 ### Links
 
-_...and so on down the line_ to `######` which produces the smallest header a.k.a. `h6`
-
-<br>
-A links' text is delimited by [square brackets] immediately followed by parentheses enclosing the url that the link points to.
+_...and so on down the line_ to `######` which produces the smallest header a.k.a. `H6`. Now that we're on the subject, a links' text is delimited by square brackets immediately followed by parentheses enclosing the url that the link points to.
 
 ```md
-This is an [example](http://example.com/) of an inline link.
+A [generic](http://example.com/) link.
 ```
 **will produce**
 
-<br>
-This is an [example](http://example.com/) of an inline link.
+<br/>
 
-<br>
-To create a link to a different location on the same page, this will do the trick:
+A [generic](http://example.com/) link.
 
-<br>
+<br/>
+
+Not that you want to go before my fascinating tutorial is over!  To provide a link lower down on the page, the following will do the trick.
+
+
+<br/>
 
 ```md
 __Take me to the__ [Coloured Code](#Coloured_Code)
+<!---hidden note: I like the old spelling (shrugs)--->
 ```
 __Take me to the__ [Coloured Code](#Coloured_Code)
 
 <br/>
-
-<strong>Tip:</strong> Most `html` is obscured from the reader, and the same goes for the `markdown` that this page is written in. `Html`, `javascript` or `golang` plugins add functionality to the webpage if needs be.
-
+{{< hackcss-alert type="warning" >}}
+<strong>Much More Than Meets The Eye:</strong> Most HTML is obscured from the reader, and also to a lesser extent the markdown that underlies this page. Javascript and other platform-specific components can add functionality to otherwise static webpages.
+{{< /hackcss-alert >}}
 
 <br/>
-The following can be written in html or markdown as we have seen. It's both an anchor and a header.
+The following can be written in HTML or markdown as we have seen. It's both an anchor and a header.
 
-```
+```html
 <h3 id="Emphasis">Emphasis</h3>
 ```
 
 <h3 id="Emphasis">Emphasis</h3>
 
-Markdown treats asterisks (`*`) and underscores (`_`) as indicators of emphasis. Text wrapped with one `*` or `_` is the equivalent of using html `<em>` tag. Double them up and text will be wrapped with an html `<strong>` tag like so:
+Markdown treats asterisks (`*`) and underscores (`_`) as indicators of emphasis. Text wrapped with one `*` or `_` is the equivalent of using HTML `<em>` tag. Double them up and text will be wrapped with an HTML `<strong>` tag like so:
 
 ```md
 *single asterisks*
@@ -136,7 +147,7 @@ Unordered lists can use asterisks or pluses or hyphens interchangably as list ma
 +   peaches
 -   cherries
 
-Ordered lists use numbers followed by periods followed by a space and the list item. the actual numbers you use to mark the list have no effect on the html output. you could even jumble up the numbers and it would still produce an ordered list:
+Ordered lists use numbers followed by periods followed by a space and the list item. the actual numbers you use to mark the list have no effect on the HTML output. you could even jumble up the numbers and it would still produce an ordered list:
 
 ```md
 2. Scooby
@@ -150,16 +161,16 @@ Ordered lists use numbers followed by periods followed by a space and the list i
 4. Do
 
 
-As for bulleted lists, paragraphs can be wrapped with hanging indents of 4 spaces to retain the indent. Otherwise, you can be as messy as you want to be in your notes and they will order themselves into the list. List items may consist of multiple paragraphs. If subsequent paragraphs in a list item are indented by either 4 spaces (or one tab) they will be included in the bulleted paragraph:
+List items may consist of multiple paragraphs. Paragraphs can be neatly wrapped with hanging indents of 4 spaces. Or your notes can be as messy as mine. Order will be available when the markdown has been interpereted.If subsequent paragraphs in a list item are indented by either 4 spaces (or one tab) they will be included in the bulleted paragraph:
 
 ```md
 *   If something can go wrong, it will.
     If anything simply cannot go wrong, it will anyway.
     Left to themselves, things tend to go from bad to worse.
--      The chance of the bread falling with the buttered side down is directly proportional to the cost of the carpet.
-The opulence of the front office decor varies
+-     The opulence of the front office decor varies
 inversely with the
 fundamental solvency of the firm.
+      The chance of the bread falling with the buttered side down being directly proportional to the cost of the carpet.
 * Tell a man there are 300 billion stars in the universe and he'll believe you. Tell him a bench has wet paint on it and he'll have to touch to be sure.
 ```
 
@@ -169,7 +180,7 @@ fundamental solvency of the firm.
 - The opulence of the front office decor varies
 inversely with the
 fundamental solvency of the firm.
-      The chance of the bread falling with the buttered side down is directly proportional to the cost of the carpet.
+      The chance of the bread falling with the buttered side down being directly proportional to the cost of the carpet.
 * Tell a man there are 300 billion stars in the universe and he'll believe you. Tell him a bench has wet paint on it and he'll have to touch to be sure.
 
 To put a blockquote within a list item, the blockquote's **>**
@@ -194,10 +205,16 @@ delimiters need to be indented:
 * We will never finish everything on our to-do lists.
 * Write another to-do list.
 
+### Emoji
+
+I enabled emojis in my [hugo] config file with `enableEmoji = true`. ~~I was going for :thinking_face: but apparently that one isn't supported yet (your mileage may vary). Instead,~~ I present `japanese_ogre`.
+
+<br/>
+:japanese_ogre:
 
 ### Inline Code
 
-To highlight a single code command surrounded by ordinary text, wrap it with [[backtick]] quotes (`` ` ``). unlike a pre-formatted code block, a code span indicates code within a normal paragraph. It will be shown in the 'mono' font of the terminal:
+To highlight a single code command surrounded by ordinary text, wrap it with backtick quotes (`` ` ``). Unlike a pre-formatted code block, a code span indicates code within a normal paragraph. It will be shown in the 'mono' font of the terminal:
 Delimiters need to be indented:
 
 ```
@@ -209,7 +226,11 @@ Use the `printf()` function.
 Use the `printf()` function.
 
 <br>
-The snippet of `html` code below serves as a link to the 'coloured code anchor down below. Your typlical toc- table of contents works uses these mechanics.
+This snippet of `HTML` code is an anchor or an embedded `id` and a H3 header. A TOC, or table of contents, uses internal page links. It could also be written in `markdown`, same difference! (The HTML tags get added when the page is run through a processor):
+
+```md
+[*Coloured_Code*](#Coloured Code)
+```
 
 ```html
 <h3 id="Coloured_Code">Coloured Code</h3>
@@ -218,17 +239,20 @@ The snippet of `html` code below serves as a link to the 'coloured code anchor d
 <h3 id="Coloured_Code">Coloured Code</h3>
 <!---hidden comment: I like the old spelling (shrugs)--->
 
-Nowadays there is support for code highlighting for about 160 programming languages. this is a snippet written in [bash](https://en.wikipedia.org/wiki/bash_(unix_shell)), the commandline language of the linux shell. In addition to the three backticks you can add an abbreiviation such as `md` (for markdown) or `sh` (for the bash shell).
+
+Nowadays there is support for code highlighting for about 160 programming languages. this example is written in [bash](https://en.wikipedia.org/wiki/bash_(unix_shell)), the commandline language of the linux shell. In addition to the three backticks you can add an abbreviation such as `md` (markdown) or `sh` (to highlight code written in bash). I'll show the backticks that are required to create a code box (they are just for illustration and have to be escaped by `\` so as not to be interpreted as 'special characters').
 
 ```sh
+\```sh
 # To load nvm bash_completion upon login or when the file is sourced.
 # add these lines to your `~/.bashrc`, `~/.profile`, or `~/.zshrc` config file
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # this loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+\```
 ```
 
-I used html to create the 'Emphasis' header/anchor, but can refer back to it using a markdown link. The two are _interchangeable_.
+The 'Emphasis' header/anchor was created using a HTML snippet, but we can also get around using markdown:
 
 ```md
 [*back up to where I was*](#Emphasis)
@@ -238,11 +262,7 @@ I used html to create the 'Emphasis' header/anchor, but can refer back to it usi
 
 ### Images
 
-To insert images to your markdown file, use the markup `![alt](/path/image.ext)`. the path can either be relative to the website, or a full url for an external image. *below* is an screenshot of my desktop
-
-<br/>
-<strong>Tip:</strong> You can set up your desired level of transparency in your programs easily in linux. The screenshot shows my text editor, neovim, and in the layer underneath it, firefox. My Hugo sites's embedded server reflects the changes as they are typed and reflects the changes immediately in the webpage. My changes are pushed to the clould via Amazon's CodeCommit service just as soon as I issue the three familiar commands: `git add .`, git commit -m "message documenting change(s)", and `git push -u origin master`.
-
+To insert images to your markdown file, use the markup `![alt](/path/image.ext)`. the path can either be relative to the website, or a full url for an external image. *Below* is a screenshot of my current desktop.
 
 <br/>
 
@@ -255,17 +275,23 @@ __a.k.a.__
 ```
 ![A screenshot of the underlying code](/images/md-guide.png "Neovim on My Desktop")
 
+<br/>
+{{< hackcss-alert type="success" >}}
+<strong>Cool Tip:</strong> Set your program windows to 70% transparency in linux. The top layer shows my text editor, neovim, underneath is the HTML translation in firefox. On the bottom layer, a random slide-show of hand-picked artwork.
+{{< /hackcss-alert >}}
+
 ### Video
 
-There are a couple of ways to share a video. Locally stored videos within HTML5 `<video>` tags and within `<iframe>` tags for externally hosted videos . Plain markdown results in a link to the video, whereas with a snippet of `html` we can embed video of the **author making _fruit leather_ with a homemade _solar dehydrator_.:**
+There are a couple of ways to share a video. I can use a `shortcode` provided in the [Hugo] static site generator. Plain markdown results in a link to the video, but with HTML5 tags we can embed this video of the **author making _fruit leather_ with a homemade _solar dehydrator_.:**
 
 
 ```html
-<iframe width="420" height="315" src="https://www.youtube.com/embed/aVHsUCALkoU" frameborder="0" allowfullscreen></iframe>
-```
 
+<iframe width="1059" height="480" src="https://www.youtube.com/embed/aVHsUCALkoU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+```
+<iframe width="1059" height="480" src="https://www.youtube.com/embed/aVHsUCALkoU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
-<iframe width="420" height="315" src="https://www.youtube.com/embed/aVHsUCALkoU" frameborder="0" allowfullscreen></iframe>
 
 ### Paragraphs and Line Breaks
 
@@ -276,7 +302,7 @@ If you want to be sure of getting empty lines between elements, insert a `<br />
 ### Tables
 
 ``` {.md}
-| Left align   | Center align  | Right align    |
+| Left         | Center        | Right          |
 | :----------- | :-----------: | -------------: |
 | This         | This          | This           |
 | column       | column        | column         |
@@ -286,7 +312,7 @@ If you want to be sure of getting empty lines between elements, insert a `<br />
 | aligned      | aligned       | aligned        |
 ```
 
-| Left align   | Center align  | Right align    |
+| Left         | Center        | Right          |
 | :----------- | :-----------: | -------------: |
 | This         | This          | This           |
 | column       | column        | column         |
@@ -295,40 +321,40 @@ If you want to be sure of getting empty lines between elements, insert a `<br />
 | left-        | center-       | right-         |
 | aligned      | aligned       | aligned        |
 
+If you want to format text on a particular way on the page, one way to do it is create a table with those proportions (your table will span the width of the page). Set the border of the table to 0px in your CSS and the table edges will not be visible, but the text will.
+
+<br\>
 ### Blockquotes
 
 Markdown uses email-style `>` characters for blockquoting. Blockquotes can contain other Markdown elements, including headers, lists, and code blocks. Put `>` before the first line of a _hard-wrapped_ paragraph:
 
 ```md
-> Sorrow prepares you for joy. It violently sweeps everything out of your house,
-so that new joy can find space to enter.
-It shakes the yellow leaves from the bough of your heart, so that fresh,
-green leaves can grow in their place. It pulls up the rotten roots,
-so that new roots hidden beneath have room to grow.
-Whatever sorrow shakes from your heart, far better things will take their place.
-― Rumi
-```
-
+>    Sorrow prepares you for joy. It violently sweeps everything out of
+>  your house, so that new joy can find space to enter.
+>  It shakes the yellow leaves from the bough of your heart, so that fresh,
+>  green leaves can grow in their place. It pulls up the rotten roots,
+>  so that new roots hidden beneath have room to grow.
+>  Whatever sorrow shakes from your heart, far better things will take their place.
 <br>
-> Sorrow prepares you for joy. It violently sweeps everything out of your house,
-so that new joy can find space to enter.
-It shakes the yellow leaves from the bough of your heart, so that fresh,
-green leaves can grow in their place. It pulls up the rotten roots,
-so that new roots hidden beneath have room to grow.
-Whatever sorrow shakes from your heart, far better things will take their place.
-― Rumi
+>    ~Rumi
+```
+<br>
+
+>    Sorrow prepares you for joy. It violently sweeps everything out of
+>  your house, so that new joy can find space to enter.
+>  It shakes the yellow leaves from the bough of your heart, so that fresh,
+>  green leaves can grow in their place. It pulls up the rotten roots,
+>  so that new roots hidden beneath have room to grow.
+>  Whatever sorrow shakes from your heart, far better things will take their place.
+<br>
+>                                  ~Rumi
+
 <br>
 ### Code Blocks
 
-Pre-formatted code blocks are used for writing about programming or
-markup source code. Rather than forming normal paragraphs, the lines
-of a code block are interpreted literally. Markdown wraps a code block
-in both `<pre>` and `<code>` `html` tags.
+Pre-formatted code blocks are used for writing about programming and source code. Rather than forming normal paragraphs, the lines are  wrapped in `<pre>` and `<code>` `HTML` tags to be interpreted literally. To get the result, indent every line of the block by at least 4 spaces or 1 tab.
 
-To produce a code block in markdown, simply indent every line of the
-block by at least 4 spaces or 1 tab.
-
-```html
+```
     <div class="footer">
         &copy; 2004 foo corporation
     </div>
@@ -386,6 +412,4 @@ Lines across the page with either of:
 
 ***
 ---
-
-
 
